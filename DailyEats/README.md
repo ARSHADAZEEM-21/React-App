@@ -3,17 +3,25 @@
 
 ## Header
    - Logo Image
-   - Search Bar
-   - Nav Bar
+
+    - Nav Bar
      * Home
      * About
      * Contact-us
      * cart
+   ---
+    - Search Bar
+      * input
+      * search-button
+   - Sigin Button  
 
 
 ## Body
-   - Hero Image
-   - Restaurant Cards
+    - Hero Section
+     * Hero Image
+     * Text Content + Button
+   ---
+    - Restaurant Cards
       * Img
       * Name
       * Location
