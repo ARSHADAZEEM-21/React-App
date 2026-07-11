@@ -1,28 +1,48 @@
 import RestaurantCard from "./RestaurantCards";
-import { restaurantsArr } from "../utils/mockData";
+// import { restaurantsArr } from "../utils/mockData";
 import Shimmer from "./Shimmer";
+import { swiggyUrl } from "../utils/constants";
+import { useState, useEffect } from "react";
 
 const Body = () => {
 
+    const [hotelList, setHotelList] = useState(null)
+
+    useEffect(() => {
+        getData()
+    }, [])
+
     const getData = async () => {
-        const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.374638644228302&lng=78.4300148114562&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",);
+        const response = await fetch(swiggyUrl);
 
         const data = await response.json();
-        console.log(data);
+        console.log(
+            data.data.cards[1]?.gridElements?.infoWithStyle?.restaurants
+        );
+
+        setHotelList(
+            data.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        );
+
+        console.log("hotel list", hotelList);
+    };
+
+    if (hotelList === null) {
+        return <Shimmer />
     }
+
+
     return (
         <div className="body">
             <h3 className="res-title">Top Restaurants in Hyderabad</h3>
-            {/* <Shimmer/> */}
-            <div style={{margin:"100px"}}>
-                {""}
-                <button onClick={getData}>GetData</button>
-            </div>
+
 
             <div className="res-container">
-                {/* {restaurantsArr.map((resObj) => {
-                    return <RestaurantCard resDetail={resObj} key= {resObj.id} />;
-                })} */}
+                {hotelList.map((resObj) => {
+                    return (
+                        <RestaurantCard resDetail={resObj?.info} key={resObj?.info?.id} />
+                    );
+                })}
 
             </div>
         </div>

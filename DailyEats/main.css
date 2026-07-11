@@ -196,12 +196,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #b9d09e;
 }
 
 .shimmer-card {
     height: 320px;
     width: 250px;
-    background-color: #f0f0f0;
+    background-color: #b9d09e;
     border-radius: 10px;
     padding: 10px;
     margin: 15px;
@@ -239,7 +240,7 @@
 .shimmer-img{
     height: 150px;
     width: 100%;
-    background-color: #e4e4e4;
+    background-color: #cce3b1;
     border-radius: 10px;
 }
 
@@ -247,12 +248,12 @@
     margin-top:10px;
     height: 35px;
     width: 100%;
-    background-color: #e4e4e4;
+    background-color: #cce3b1;
     border-radius: 10px;
 }
 
 .shimmer-cuisine {
-  background-color: #e4e4e4;
+  background-color: #cce3b1;
   width: 80%;
   border-radius: 10px;
   height: 25px;
@@ -260,7 +261,7 @@
 }
 
 .shimmer-rating {
-  background-color: #e4e4e4;
+  background-color: #cce3b1;
   width: 60%;
   border-radius: 10px;
   height: 20px;
@@ -268,7 +269,7 @@
 }
 
 .shimmer-delivery {
-  background-color: #e4e4e4;
+  background-color: #cce3b1;
   width: 70%;
   border-radius: 10px;
   height: 20px;
