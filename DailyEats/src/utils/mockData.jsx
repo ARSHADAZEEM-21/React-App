@@ -1,4 +1,4 @@
-export const restaurantsArr = [
+export let restaurantsArr = [
     {
         id: "40377",
         resName: "Lucky Restaurant",
