@@ -158,14 +158,21 @@
     color: #404e59;
 }
 
+.body{
+    background-color: #b9d09e;
+}
 
 /* Restaurant Cards */
+
+.res-title{
+    padding : 20px 0 10px 20px;
+}
 
 .res-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #b9d09e;
+    /* background-color: #b9d09e; */
 }
 
 .res-card {
