@@ -28,6 +28,7 @@ const RestaurantCard = ({ resDetail, extraDetail }) => {
                 {sla.delieveryTime} mins | {costForTwo}
             </h4>
             <h4>📍{areaName}</h4>
+            <button className="add-to-cart-btn">Add to Cart</button>
         </div>
     );
 };

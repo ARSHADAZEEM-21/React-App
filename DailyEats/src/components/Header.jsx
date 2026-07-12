@@ -3,9 +3,9 @@ import { logoUrl } from "../utils/constants";
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <div className="logo-container">
-                <img className="header-logo" src={logoUrl} />
+                <img className="header-logo" src={logoUrl} alt="DailyEATS logo" />
             </div>
 
             <div className="nav-items">
@@ -24,15 +24,15 @@ const Header = () => {
                     </li>
                 </ul>
                 <div className="search-bar">
-                    <input type="text" className="inp-text" placeholder="Search Food" />
+                    <input type="text" className="inp-text" placeholder="Search food or restaurants" />
                     <button className="search-btn">🔍</button>
                 </div>
             </div>
 
             <div className="signin-btn">
-                <button>SIGN IN</button>
+                <button>Sign In</button>
             </div>
-        </div>
+        </header>
     );
 };
 
