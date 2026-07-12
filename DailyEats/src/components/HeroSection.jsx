@@ -1,7 +1,9 @@
+import { heroimgUrl } from "../utils/constants";
+
 const HeroSection = () => {
     return (
         <div className="hero">
-            <img src="https://ik.imagekit.io/efijthc6h/hero-img.jfif" alt="Food" className="hero-image" />
+            <img src={heroimgUrl} alt="Food" className="hero-image" />
 
             <div className="hero-content">
                 <h1>
